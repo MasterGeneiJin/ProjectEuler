@@ -1,0 +1,8 @@
+/Debug
+/Release
+*.sdf
+*.sln
+*.opensdf
+*.vcxproj
+/ProjectEuler/Debug
+/ProjectEuler/Release
