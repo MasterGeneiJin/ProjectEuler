@@ -36,4 +36,5 @@ public:
 	int DistinctPowers();
 	long DigitFifthPowers();
 	int CoinSums();
+	int PanDigitalProducts();
 };
