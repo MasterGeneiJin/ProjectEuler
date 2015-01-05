@@ -11,7 +11,7 @@ int Euler::PanDigitalProducts()
 
 	for (BigInteger i = 0; i < EulerUtility::factorial(9); ++i)
 	{
-		for (int it1 = 1; it1 < 6; ++ it1)
+		for (int it1 = 1; it1 < 5; ++ it1)
 			for (int it2 = it1 + 1; it2 < lexicon.size() - 1; ++it2)
 			{
 				int prod = std::stoi(lexicon.substr(0, it1)) * std::stoi(lexicon.substr(it1, it2 - it1));
