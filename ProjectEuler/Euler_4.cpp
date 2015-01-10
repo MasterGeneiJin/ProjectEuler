@@ -4,21 +4,18 @@
 
 #include "Euler.h"
 
-bool isPalindrome(int i, int j)
+bool isPalindrome(int i)
 {
 	std::ostringstream oss;
-	oss << i * j;
+	oss << i;
 
 	std::string temp = oss.str();
-	bool isP = true;
 
 	for (unsigned int i = 0; i < temp.length(); ++i)
-	{
 		if (temp.at(i) != temp.at(temp.length() - 1 - i))
-			isP = false;
-	}
+			return false;
 
-	return isP;
+	return true;
 }
 
 struct digits {
@@ -36,7 +33,7 @@ std::string Euler::LargestPalindromeFrom3DigitProduct()
 	{
 		for (int j = 999; j > 99; --j)
 		{
-			if (isPalindrome(i, j)) {
+			if (isPalindrome(i * j)) {
 				digits d;
 				d.i = i;
 				d.j = j;
