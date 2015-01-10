@@ -36,7 +36,8 @@ void main() {
 	//std::cout << e.DistinctPowers() << std::endl;
 	//std::cout << e.DigitFifthPowers() << std::endl;
 	//std::cout << e.CoinSums() << std::endl;
-	std::cout << e.PanDigitalProducts() << std::endl;
+	//std::cout << e.PanDigitalProducts() << std::endl;
+	std::cout << e.DigitCancellingFractionsDenominator() << std::endl;
 
 	std::cin.get();
 }

@@ -10,8 +10,8 @@ long Euler::DigitFifthPowers()
 
 		std::string current = std::to_string(j);
 
-		for (int i = 0; i < current.length(); i++)
-			currentPowerTotal += pow(current.at(i) - 48, 5);
+		for (unsigned i = 0; i < current.length(); i++)
+			currentPowerTotal += (int)pow(current.at(i) - 48, 5);
 
 		if (j == currentPowerTotal)
 			sum += currentPowerTotal;

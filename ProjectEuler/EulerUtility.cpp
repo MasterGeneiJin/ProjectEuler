@@ -92,6 +92,13 @@ BigInteger EulerUtility::factorial(BigInteger n)
     return n * factorial(n - 1);
 }
 
+int EulerUtility::factorial(int n) 
+{
+    if (n == 0)
+       return 1;
+    return n * factorial(n - 1);
+}
+
 BigInteger EulerUtility::choose(int n, int k)
 {
 	return EulerUtility::factorial(n) / (EulerUtility::factorial(k) * EulerUtility::factorial(n - k));
@@ -104,4 +111,19 @@ bool EulerUtility::isPerfectSquare(long n)
 
   long tst = (long)(sqrt(n) + 0.5);
   return tst*tst == n;
+}
+
+std::vector<int> EulerUtility::intToDigitArray(int n)
+{
+	std::vector<int> digitArray;
+
+	while (n != 0)
+	{
+		digitArray.push_back(n % 10);
+		n /= 10;
+	}
+
+	std::reverse(digitArray.begin(), digitArray.end());
+
+	return digitArray;
 }

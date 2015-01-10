@@ -4,11 +4,11 @@
 
 #include "Euler.h"
 
-int getSubInt(int it1, int it2, std::vector<int> &sub_lex)
+int getSubInt(unsigned it1, unsigned it2, std::vector<int> &sub_lex)
 {
 	int integer = 0;
 
-	for (int i = it1; i < it2; ++i)
+	for (unsigned i = it1; i < it2; ++i)
 	{
 		integer *= 10;
 		integer += sub_lex[i];
@@ -24,10 +24,10 @@ int Euler::PanDigitalProducts()
 
 	std::unordered_set<int> products;
 
-	for (int i = 0; i < 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2; ++i)
+	for (int i = 0; i < EulerUtility::factorial(9); ++i)
 	{
-		for (int it1 = 1; it1 < 5; ++ it1)
-			for (int it2 = it1 + 1; it2 < lex.size() - 3; ++it2)
+		for (unsigned it1 = 1; it1 < 5; ++ it1)
+			for (unsigned it2 = it1 + 1; it2 < lex.size() - 3; ++it2)
 			{
 				int multiplicand = getSubInt(0, it1, lex);
 				int multiplier	 = getSubInt(it1, it2, lex);
