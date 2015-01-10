@@ -1,3 +1,5 @@
+#include <numeric>
+
 #include "Euler.h"
 
 int Euler::DigitSum()
@@ -29,12 +31,5 @@ int Euler::DigitSum()
 		}
 	}
 
-	int sum = 0;
-
-	for (unsigned i = 0; i < digits.size(); ++i)
-	{
-		sum += digits[i];
-	}
-
-	return sum;
+	return std::accumulate(digits.begin(), digits.end(), 0);
 }

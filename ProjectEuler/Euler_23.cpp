@@ -1,3 +1,4 @@
+#include <numeric>
 #include "Euler.h"
 
 int Euler::NonAbundantSums()
@@ -18,10 +19,5 @@ int Euler::NonAbundantSums()
 		for (int abnum2 : abundantNumbers)
 			nonAbundantSums[abnum + abnum2 - 1] = 0;
 
-	int sum = 0;
-
-	for (int nas : nonAbundantSums)
-		sum += nas;
-
-	return sum;
+	return std::accumulate(nonAbundantSums.begin(), nonAbundantSums.end(), 0);
 }

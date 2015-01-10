@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <numeric>
 #include <unordered_set>
 
 #include "Euler.h"
@@ -39,10 +40,5 @@ int Euler::PanDigitalProducts()
 		std::next_permutation(lex.begin(), lex.end());
 	}
 
-	int sum = 0;
-
-	for (int product : products)
-		sum += product;
-
-	return sum;
+	return std::accumulate(products.begin(), products.end(), 0);
 }

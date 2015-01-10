@@ -37,4 +37,5 @@ public:
 	long DigitFifthPowers();
 	int CoinSums();
 	int PanDigitalProducts();
+	int DigitCancellingFractionsDenominator();
 };
