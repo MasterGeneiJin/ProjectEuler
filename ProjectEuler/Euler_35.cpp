@@ -3,10 +3,8 @@
 int Euler::NoOfCircularPrimes()
 {
 	int total = 2; //this algorithm misses out 2 and 5
-	int ceiling = 1e6;
-	int r_it = 1;
 
-	std::vector<int> primes = EulerUtility::getPrimesUnderCeilingIndexed(ceiling);
+	std::vector<int> primes = EulerUtility::getPrimesUnderCeilingIndexed(1000000);
 
 	for (int prime : primes)
 	{

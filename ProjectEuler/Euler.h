@@ -8,7 +8,7 @@ public:
 	int SumOfMultiplesOf3And5Ceiling1000();
 	int SumOfEvenFibonacciNumbersCeiling4m();
 	llui LargestPrimeFactor();
-	std::string LargestPalindromeFrom3DigitProduct();
+	int LargestPalindromeFrom3DigitProduct();
 	int DivisibleBy1To20();
 	int DifferenceSumOfSquaresSquareOfSum100();
 	int Get10001stPrime();
@@ -41,4 +41,5 @@ public:
 	llui DigitFactorials();
 	int NoOfCircularPrimes();
 	llui DoubleBasedPalindromes();
+	llui TruncatablePrimes();
 };

@@ -18,40 +18,22 @@ bool isPalindrome(int i)
 	return true;
 }
 
-struct digits {
-	int i;
-	int j;
-};
-
-bool digitsfunction (digits x, digits y) { return (x.i * x.j < y.i * y.j); }
-
-std::string Euler::LargestPalindromeFrom3DigitProduct()
+int Euler::LargestPalindromeFrom3DigitProduct()
 {
-	std::vector<digits> data;
+	std::vector<int> products;
 
 	for (int i = 999; i > 99; --i)
 	{
 		for (int j = 999; j > 99; --j)
 		{
 			if (isPalindrome(i * j)) {
-				digits d;
-				d.i = i;
-				d.j = j;
-				data.push_back(d);
+				products.push_back(i * j);
 				break;
 			}
 		}
 	}
 
-	if (!data.empty()) {
-		std::sort(data.begin(), data.end(), digitsfunction);
+	std::sort(products.begin(), products.end());
 
-		digits largest = data.back();
-
-		std::ostringstream oss;
-		oss << largest.i << " * " << largest.j << " = " << largest.i * largest.j << std::endl;
-		return oss.str();
-	}
-
-	return "no palindromes exist within range!\r\n";
+	return products.back();
 }

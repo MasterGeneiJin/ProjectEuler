@@ -118,11 +118,11 @@ std::vector<int> EulerUtility::factorialDigits(int n)
 	return digits;
 }
 
-BigInteger EulerUtility::factorial(BigInteger n) 
+BigInteger EulerUtility::bigFactorial(BigInteger n) 
 {
 	if (n == 0)
 		return 1;
-	return n * factorial(n - 1);
+	return n * bigFactorial(n - 1);
 }
 
 int EulerUtility::factorial(int n) 
@@ -134,7 +134,7 @@ int EulerUtility::factorial(int n)
 
 BigInteger EulerUtility::choose(int n, int k)
 {
-	return EulerUtility::factorial(n) / (EulerUtility::factorial(k) * EulerUtility::factorial(n - k));
+	return EulerUtility::bigFactorial(n) / (EulerUtility::bigFactorial(k) * EulerUtility::bigFactorial(n - k));
 }
 
 bool EulerUtility::isPerfectSquare(long n)
