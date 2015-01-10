@@ -16,11 +16,12 @@ llui Euler::TruncatablePrimes()
 	llui sum = -17; //offset, since this algo does not exclude 2, 3, 5 and 7 of which the sum is 17
 
 	for (int prime : primes)
-	{
-		std::string p = std::to_string(prime);
-		if (isTruncPrime(p, primes, true) && isTruncPrime(p, primes, false))
-			sum += prime;
-	}
+		if (prime != 0)
+		{
+			std::string p = std::to_string(prime);
+			if (isTruncPrime(p, primes, true) && isTruncPrime(p, primes, false))
+				sum += prime;
+		}
 
 	return sum;
 }
