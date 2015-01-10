@@ -113,7 +113,7 @@ bool EulerUtility::isPerfectSquare(long n)
   return tst*tst == n;
 }
 
-std::vector<int> EulerUtility::intToDigitArray(int n)
+std::vector<int> EulerUtility::intToDigits(int n)
 {
 	std::vector<int> digitArray;
 

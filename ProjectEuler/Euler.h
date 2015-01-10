@@ -38,4 +38,5 @@ public:
 	int CoinSums();
 	int PanDigitalProducts();
 	int DigitCancellingFractionsDenominator();
+	llui DigitFactorials();
 };

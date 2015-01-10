@@ -16,5 +16,5 @@ public:
 	static BigInteger factorial(BigInteger n);
 	static BigInteger choose(int n, int k);
 	static bool isPerfectSquare(long n);
-	static std::vector<int> intToDigitArray(int n);
+	static std::vector<int> intToDigits(int n);
 };

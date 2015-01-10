@@ -2,7 +2,7 @@
 
 std::vector<int> lowestTerm(int n, int d, std::vector<int> &p)
 {
-	for (int i = 0; i < p.size(); )
+	for (unsigned i = 0; i < p.size(); )
 	{
 		if ((n % p[i] == 0) && (d % p[i] == 0))
 		{
@@ -42,11 +42,11 @@ int Euler::DigitCancellingFractionsDenominator()
 
 	for (int denominator = 10; denominator < 100; ++ denominator)
 	{
-		std::vector<int> denom = EulerUtility::intToDigitArray(denominator);
+		std::vector<int> denom = EulerUtility::intToDigits(denominator);
 
 		for (int numerator = 10; numerator < denominator; ++numerator)
 		{
-			std::vector<int> numer = EulerUtility::intToDigitArray(numerator);
+			std::vector<int> numer = EulerUtility::intToDigits(numerator);
 
 			addDigitCancellingFraction(denom, numer, primes, dc_fractions, numerator, denominator, true);
 			addDigitCancellingFraction(denom, numer, primes, dc_fractions, numerator, denominator, false);
