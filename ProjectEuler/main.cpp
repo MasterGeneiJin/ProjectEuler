@@ -41,7 +41,8 @@ void main() {
 	//std::cout << e.DigitFactorials() << std::endl;
 	//std::cout << e.NoOfCircularPrimes() << std::endl;
 	//std::cout << e.DoubleBasedPalindromes() << std::endl;
-	std::cout << e.TruncatablePrimes() << std::endl;
+	//std::cout << e.TruncatablePrimes() << std::endl;
+	std::cout << e.PanDigitalMultiples() << std::endl;
 	
 	std::cin.get();
 }

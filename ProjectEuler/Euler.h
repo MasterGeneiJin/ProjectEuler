@@ -42,4 +42,5 @@ public:
 	int NoOfCircularPrimes();
 	llui DoubleBasedPalindromes();
 	llui TruncatablePrimes();
+	int PanDigitalMultiples();
 };
