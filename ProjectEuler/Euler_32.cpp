@@ -3,24 +3,40 @@
 
 #include "Euler.h"
 
+int getSubInt(int it1, int it2, std::vector<int> &sub_lex)
+{
+	int integer = 0;
+
+	for (int i = it1; i < it2; ++i)
+	{
+		integer *= 10;
+		integer += sub_lex[i];
+	}
+
+	return integer;
+}
+
 int Euler::PanDigitalProducts()
 {
-	std::string lexicon = "123456789";
+	int lexicon[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	std::vector<int> lex(std::begin(lexicon), std::end(lexicon));
 
 	std::unordered_set<int> products;
 
-	for (BigInteger i = 0; i < EulerUtility::factorial(9); ++i)
+	for (int i = 0; i < 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2; ++i)
 	{
 		for (int it1 = 1; it1 < 5; ++ it1)
-			for (int it2 = it1 + 1; it2 < lexicon.size() - 2; ++it2)
+			for (int it2 = it1 + 1; it2 < lex.size() - 3; ++it2)
 			{
-				int prod = std::stoi(lexicon.substr(0, it1)) * std::stoi(lexicon.substr(it1, it2 - it1));
+				int multiplicand = getSubInt(0, it1, lex);
+				int multiplier	 = getSubInt(it1, it2, lex);
+				int product		 = getSubInt(it2, lex.size(), lex);
 
-				if (prod == std::stoi(lexicon.substr(it2, lexicon.size())))
-					products.insert(prod);
+				if (multiplicand * multiplier == product)
+					products.insert(product);
 			}
 
-		std::next_permutation(lexicon.begin(), lexicon.end());
+		std::next_permutation(lex.begin(), lex.end());
 	}
 
 	int sum = 0;
