@@ -39,4 +39,5 @@ public:
 	int PanDigitalProducts();
 	int DigitCancellingFractionsDenominator();
 	llui DigitFactorials();
+	int NoOfCircularPrimes();
 };

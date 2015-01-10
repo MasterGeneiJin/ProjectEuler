@@ -41,8 +41,41 @@ std::vector<int> EulerUtility::getPrimesUnderCeiling(int ceiling)
 		for(int j = 3; j * j <= i && is_prime; j += 2)
 			if(i % j == 0) is_prime = false;
 
-		if(is_prime) {
+		if(is_prime)
 			primes.push_back(i);
+	}
+
+	return primes;
+}
+
+std::vector<int> EulerUtility::getPrimesUnderCeilingIndexed(int ceiling)
+{
+	std::vector<int> primes;
+
+	primes.push_back(0);
+	primes.push_back(0);
+	primes.push_back(2);
+	primes.push_back(3);
+	primes.push_back(0);
+
+	bool is_prime;
+
+	for(int i = 5; i < ceiling; i += 2)
+	{
+		is_prime = true;
+
+		for(int j = 3; j * j <= i && is_prime; j += 2)
+			if(i % j == 0) is_prime = false;
+
+		if(is_prime)
+		{
+			primes.push_back(i);
+			primes.push_back(0);
+		}
+		else
+		{
+			primes.push_back(0);
+			primes.push_back(0);
 		}
 	}
 
@@ -87,16 +120,16 @@ std::vector<int> EulerUtility::factorialDigits(int n)
 
 BigInteger EulerUtility::factorial(BigInteger n) 
 {
-    if (n == 0)
-       return 1;
-    return n * factorial(n - 1);
+	if (n == 0)
+		return 1;
+	return n * factorial(n - 1);
 }
 
 int EulerUtility::factorial(int n) 
 {
-    if (n == 0)
-       return 1;
-    return n * factorial(n - 1);
+	if (n == 0)
+		return 1;
+	return n * factorial(n - 1);
 }
 
 BigInteger EulerUtility::choose(int n, int k)
@@ -106,11 +139,11 @@ BigInteger EulerUtility::choose(int n, int k)
 
 bool EulerUtility::isPerfectSquare(long n)
 {
-  if (n < 0)
-    return false;
+	if (n < 0)
+		return false;
 
-  long tst = (long)(sqrt(n) + 0.5);
-  return tst*tst == n;
+	long tst = (long)(sqrt(n) + 0.5);
+	return tst*tst == n;
 }
 
 std::vector<int> EulerUtility::intToDigits(int n)
@@ -126,4 +159,17 @@ std::vector<int> EulerUtility::intToDigits(int n)
 	std::reverse(digitArray.begin(), digitArray.end());
 
 	return digitArray;
+}
+
+int EulerUtility::digitsToInteger(std::vector<int> d)
+{
+	std::stringstream ss;
+
+	for (int i : d)
+		ss << i;
+
+	int integer;
+	ss >> integer;
+
+	return integer;
 }

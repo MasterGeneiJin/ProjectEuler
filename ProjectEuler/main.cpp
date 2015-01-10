@@ -38,7 +38,8 @@ void main() {
 	//std::cout << e.CoinSums() << std::endl;
 	//std::cout << e.PanDigitalProducts() << std::endl;
 	//std::cout << e.DigitCancellingFractionsDenominator() << std::endl;
-	std::cout << e.DigitFactorials() << std::endl;
+	//std::cout << e.DigitFactorials() << std::endl;
+	std::cout << e.NoOfCircularPrimes() << std::endl;
 
 	std::cin.get();
 }
