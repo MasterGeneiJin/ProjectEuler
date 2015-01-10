@@ -42,7 +42,8 @@ void main() {
 	//std::cout << e.NoOfCircularPrimes() << std::endl;
 	//std::cout << e.DoubleBasedPalindromes() << std::endl;
 	//std::cout << e.TruncatablePrimes() << std::endl;
-	std::cout << e.PanDigitalMultiples() << std::endl;
-	
+	//std::cout << e.PanDigitalMultiples() << std::endl;
+	std::cout << e.MaximumRightAngledTriangles() << std::endl;
+
 	std::cin.get();
 }

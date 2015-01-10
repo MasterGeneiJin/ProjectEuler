@@ -43,4 +43,5 @@ public:
 	llui DoubleBasedPalindromes();
 	llui TruncatablePrimes();
 	int PanDigitalMultiples();
+	int MaximumRightAngledTriangles();
 };
