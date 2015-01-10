@@ -44,4 +44,5 @@ public:
 	llui TruncatablePrimes();
 	int PanDigitalMultiples();
 	int MaximumRightAngledTriangles();
+	int ChampernowneConstant();
 };
