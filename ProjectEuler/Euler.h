@@ -40,4 +40,5 @@ public:
 	int DigitCancellingFractionsDenominator();
 	llui DigitFactorials();
 	int NoOfCircularPrimes();
+	llui DoubleBasedPalindromes();
 };

@@ -39,7 +39,8 @@ void main() {
 	//std::cout << e.PanDigitalProducts() << std::endl;
 	//std::cout << e.DigitCancellingFractionsDenominator() << std::endl;
 	//std::cout << e.DigitFactorials() << std::endl;
-	std::cout << e.NoOfCircularPrimes() << std::endl;
-
+	//std::cout << e.NoOfCircularPrimes() << std::endl;
+	std::cout << e.DoubleBasedPalindromes() << std::endl;
+	
 	std::cin.get();
 }
