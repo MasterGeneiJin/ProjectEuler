@@ -8,7 +8,7 @@ int Euler::NoOfCircularPrimes()
 
 	for (int prime : primes)
 	{
-		if (prime != 0)
+		if (prime != -1)
 		{
 			bool potentialCircularPrime = true;
 
