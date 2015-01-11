@@ -20,7 +20,8 @@ public:
 	static bool isPerfectSquare(long n);
 	static std::vector<int> intToDigits(int n);
 	static int digitsToInteger(std::vector<int> digits);
-	static bool hasUniqueDigits(int n);
+	static llui digitsTollui(std::string s);
+	static bool hasUniqueDigits(int n, bool allowZero);
 	static bool isPrime(int n);
 	static bool isTriangle(int number);
 	static std::vector<std::string> openWordFile(std::string filename);

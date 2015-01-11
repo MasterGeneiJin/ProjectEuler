@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+
 #include "Euler.h"
 
 void main() {
@@ -10,7 +11,7 @@ void main() {
 
     start = std::clock();
 
-    int i = e.DivisibleBy1To20();
+    BigInteger i = e.SubStringDivisibility();
 
     duration = ( std::clock() - start );
 
@@ -58,6 +59,6 @@ void main() {
 	//std::cout << e.ChampernowneConstant() << std::endl;
 	//std::cout << e.PanDigitalPrime() << std::endl;
 	//std::cout << e.CodedTriangleNumbers() << std::endl;
-
+	//std::cout << e.SubStringDivisibility() << std::endl;
 	std::cin.get();
 }

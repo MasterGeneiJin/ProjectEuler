@@ -47,4 +47,5 @@ public:
 	int ChampernowneConstant();
 	int PanDigitalPrime();
 	int CodedTriangleNumbers();
+	BigInteger SubStringDivisibility();
 };

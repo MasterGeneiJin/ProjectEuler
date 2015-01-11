@@ -182,7 +182,20 @@ int EulerUtility::digitsToInteger(std::vector<int> d)
 	return integer;
 }
 
-bool EulerUtility::hasUniqueDigits(int n)
+llui EulerUtility::digitsTollui(std::string s)
+{
+	std::stringstream ss;
+
+	for (char c : s)
+		ss << c;
+
+	llui digits;
+	ss >> digits;
+
+	return digits;
+}
+
+bool EulerUtility::hasUniqueDigits(int n, bool allowZero)
 {
 	std::vector<int> digits = EulerUtility::intToDigits(n);
 
@@ -190,7 +203,7 @@ bool EulerUtility::hasUniqueDigits(int n)
 
 	for (int digit : digits)
 	{
-		if (digit == 0)
+		if (digit == 0 && !allowZero)
 			return false;
 
 		uniqueDigits.insert(digit);
