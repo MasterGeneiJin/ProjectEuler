@@ -45,7 +45,8 @@ void main() {
 	//std::cout << e.PanDigitalMultiples() << std::endl;
 	//std::cout << e.MaximumRightAngledTriangles() << std::endl;
 	//std::cout << e.ChampernowneConstant() << std::endl;
-	std::cout << e.PanDigitalPrime() << std::endl;
+	//std::cout << e.PanDigitalPrime() << std::endl;
+	//std::cout << e.CodedTriangleNumbers() << std::endl;
 
 	std::cin.get();
 }

@@ -1,3 +1,5 @@
+#include <sstream>
+
 #include "Euler.h"
 
 std::string Euler::SpecialPythagoreanTriplet()

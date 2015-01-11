@@ -46,4 +46,5 @@ public:
 	int MaximumRightAngledTriangles();
 	int ChampernowneConstant();
 	int PanDigitalPrime();
+	int CodedTriangleNumbers();
 };

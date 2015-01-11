@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <sstream>
 
 #include "Euler.h"
 

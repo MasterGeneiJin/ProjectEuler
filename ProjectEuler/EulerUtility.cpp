@@ -1,3 +1,8 @@
+#include <fstream>
+#include <regex>
+#include <sstream>
+#include <unordered_set>
+
 #include "EulerUtility.h"
 
 int EulerUtility::sumOfDivisors(int n)
@@ -199,4 +204,22 @@ bool EulerUtility::isPrime(int n)
 			return false;
 
 	return true;
+}
+
+bool EulerUtility::isTriangle(int number)
+{
+	return std::floor(sqrt(2 * number + 0.25) - 0.5) == sqrt(2 * number + 0.25) - 0.5;
+}
+
+std::vector<std::string> EulerUtility::openWordFile(std::string filename)
+{
+	std::ifstream file;
+    std::vector<std::string> names;
+    std::string name;
+    file.open(filename);
+
+    while(getline(file, name, ','))
+        names.push_back(name.substr(1, name.size() - 2));
+
+	return names;
 }
