@@ -5,6 +5,11 @@
 
 #include "EulerUtility.h"
 
+int EulerUtility::multiply(int x, int y)
+{
+    return x * y;
+}
+
 int EulerUtility::sumOfDivisors(int n)
 {
 	int prod = 1;

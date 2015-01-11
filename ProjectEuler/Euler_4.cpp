@@ -23,7 +23,7 @@ int Euler::LargestPalindromeFrom3DigitProduct()
 
 	for (int i = 999; i > 99; --i)
 	{
-		for (int j = 999; j > 99; --j)
+		for (int j = 999; j >= i; --j)
 		{
 			if (isPalindrome(i * j)) {
 				products.push_back(i * j);

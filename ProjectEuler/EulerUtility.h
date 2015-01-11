@@ -8,6 +8,7 @@ typedef long long unsigned int llui;
 class EulerUtility
 {
 public:
+	static int multiply(int x, int y);
 	static std::vector<int> getPrimesUnderCeiling(int ceiling);
 	static std::vector<int> getPrimesUnderCeilingIndexed(int ceiling);
 	static std::vector<int> tokenizer(std::string s, char delim);

@@ -13,7 +13,7 @@ public:
 	int DifferenceSumOfSquaresSquareOfSum100();
 	int Get10001stPrime();
 	llui FindGreatestProductOf13AdjacentDigits();
-	std::string SpecialPythagoreanTriplet();
+	int SpecialPythagoreanTriplet();
 	llui SumOfPrimesUnder2m();
 	int LargestProductInGrid();
 	llui TriangleNoWithGreaterThan500Divisors();

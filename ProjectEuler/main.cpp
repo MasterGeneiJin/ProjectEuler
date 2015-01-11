@@ -1,10 +1,21 @@
 #include <iostream>
-
+#include <ctime>
 #include "Euler.h"
 
 void main() {
 	Euler e;
 	
+	std::clock_t start;
+    double duration;
+
+    start = std::clock();
+
+    int i = e.DivisibleBy1To20();
+
+    duration = ( std::clock() - start );
+
+	std::cout << i << " duration: " << duration << "ms" << std::endl;
+
 	//std::cout << e.SumOfMultiplesOf3And5Ceiling1000() << std::endl;
 	//std::cout << e.SumOfEvenFibonacciNumbersCeiling4m() << std::endl;
 	//std::cout << e.LargestPrimeFactor() << std::endl;

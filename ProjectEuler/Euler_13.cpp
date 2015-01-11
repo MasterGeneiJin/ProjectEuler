@@ -84,5 +84,5 @@ std::string Euler::LargeSum() {
 		}
 	}
 
-	return getSum(digits);
+	return getSum(digits).substr(0, 10);
 }
