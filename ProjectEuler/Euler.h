@@ -45,4 +45,5 @@ public:
 	int PanDigitalMultiples();
 	int MaximumRightAngledTriangles();
 	int ChampernowneConstant();
+	int PanDigitalPrime();
 };

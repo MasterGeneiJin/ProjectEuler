@@ -1,5 +1,7 @@
 #include <string>
 #include <vector>
+#include <sstream>
+#include <unordered_set>
 
 #include "BigIntegerLibrary.hh"
 
@@ -19,4 +21,6 @@ public:
 	static bool isPerfectSquare(long n);
 	static std::vector<int> intToDigits(int n);
 	static int digitsToInteger(std::vector<int> digits);
+	static bool hasUniqueDigits(int n);
+	static bool isPrime(int n);
 };

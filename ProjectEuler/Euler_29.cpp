@@ -1,4 +1,3 @@
-#include <unordered_set>
 #include "Euler.h"
 
 std::vector<int> getPowers(int ceiling)

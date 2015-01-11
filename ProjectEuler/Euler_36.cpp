@@ -1,4 +1,3 @@
-#include <sstream>
 #include <bitset>
 
 #include "Euler.h"

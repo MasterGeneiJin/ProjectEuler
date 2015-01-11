@@ -1,5 +1,3 @@
-#include <sstream>
-
 #include "EulerUtility.h"
 
 int EulerUtility::sumOfDivisors(int n)
@@ -172,4 +170,33 @@ int EulerUtility::digitsToInteger(std::vector<int> d)
 	ss >> integer;
 
 	return integer;
+}
+
+bool EulerUtility::hasUniqueDigits(int n)
+{
+	std::vector<int> digits = EulerUtility::intToDigits(n);
+
+	std::unordered_set<int> uniqueDigits;
+
+	for (int digit : digits)
+	{
+		if (digit == 0)
+			return false;
+
+		uniqueDigits.insert(digit);
+	}
+
+	return digits.size() == uniqueDigits.size();
+}
+
+bool EulerUtility::isPrime(int n)
+{
+	if (((!(n & 1)) && n != 2 ) || (n < 2) || (n % 3 == 0 && n != 3))
+		return false;
+
+	for(int k = 1; 36 * k * (k - 12) * k < n; ++k)
+		if ((n % ((6 * k) + 1) == 0) || (n % ((6 * k) - 1) == 0))
+			return false;
+
+	return true;
 }

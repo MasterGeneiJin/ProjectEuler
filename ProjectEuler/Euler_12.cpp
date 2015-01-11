@@ -1,5 +1,3 @@
-#include <vector>
-
 #include "Euler.h"
 
 int getNumberOfDivisorsFromPrimeFactors(llui target, std::vector<int> &primes)

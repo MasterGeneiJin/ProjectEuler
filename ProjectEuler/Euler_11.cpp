@@ -1,6 +1,4 @@
 #include <fstream>
-#include <sstream>
-#include <vector>
 
 #include "Euler.h"
 
