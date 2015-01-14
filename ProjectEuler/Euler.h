@@ -48,4 +48,5 @@ public:
 	int PanDigitalPrime();
 	int CodedTriangleNumbers();
 	BigInteger SubStringDivisibility();
+	int MinimizedPentagonalDifference();
 };

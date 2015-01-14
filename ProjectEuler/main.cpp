@@ -11,7 +11,7 @@ void main() {
 
     start = std::clock();
 
-    BigInteger i = e.SubStringDivisibility();
+    BigInteger i = e.MinimizedPentagonalDifference();
 
     duration = ( std::clock() - start );
 
@@ -60,5 +60,7 @@ void main() {
 	//std::cout << e.PanDigitalPrime() << std::endl;
 	//std::cout << e.CodedTriangleNumbers() << std::endl;
 	//std::cout << e.SubStringDivisibility() << std::endl;
+	//std::cout << e.MinimizedPentagonalDifference() << std::endl;
+
 	std::cin.get();
 }

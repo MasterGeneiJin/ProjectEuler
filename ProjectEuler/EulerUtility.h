@@ -23,6 +23,7 @@ public:
 	static llui digitsTollui(std::string s);
 	static bool hasUniqueDigits(int n, bool allowZero);
 	static bool isPrime(int n);
-	static bool isTriangle(int number);
+	static bool isTriangle(int n);
+	static bool isPentagonal(int n);
 	static std::vector<std::string> openWordFile(std::string filename);
 };

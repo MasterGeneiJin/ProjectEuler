@@ -30,8 +30,8 @@ int Euler::PanDigitalProducts()
 			for (unsigned it2 = it1 + 1; it2 < lex.size() - 3; ++it2)
 			{
 				int multiplicand = getSubInt(0, it1, lex);
-				int multiplier	 = getSubInt(it1, it2, lex);
-				int product		 = getSubInt(it2, lex.size(), lex);
+				int multiplier = getSubInt(it1, it2, lex);
+				int product = getSubInt(it2, lex.size(), lex);
 
 				if (multiplicand * multiplier == product)
 					products.insert(product);

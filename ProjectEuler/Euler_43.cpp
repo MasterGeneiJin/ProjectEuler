@@ -40,12 +40,7 @@ BigInteger Euler::SubStringDivisibility()
 	for (int i = 0; i < 7; ++i)
 		for (int j = 12; j <= 987; ++j)
 			if ((j % primes[i] == 0) && (EulerUtility::hasUniqueDigits(j, true)))
-			{
-				if (j < 100)
-					potentialSubLex[i].push_back("0" + std::to_string(j));
-				else
-					potentialSubLex[i].push_back(std::to_string(j));
-			}
+					potentialSubLex[i].push_back(((j < 100) ? "0" : "") + std::to_string(j));
 
 	findDivisiblePermutations(divisiblePermutations, potentialSubLex, 6);
 

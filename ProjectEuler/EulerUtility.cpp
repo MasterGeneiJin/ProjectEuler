@@ -224,9 +224,15 @@ bool EulerUtility::isPrime(int n)
 	return true;
 }
 
-bool EulerUtility::isTriangle(int number)
+bool EulerUtility::isTriangle(int n)
 {
-	return std::floor(sqrt(2 * number + 0.25) - 0.5) == sqrt(2 * number + 0.25) - 0.5;
+	return std::floor(sqrt(2 * n + 0.25) - 0.5) == sqrt(2 * n + 0.25) - 0.5;
+}
+
+bool EulerUtility::isPentagonal(int n)
+{
+	bool c =isPerfectSquare((24 * n) + 1) && ((int)sqrt((24 * n) + 1) + 1) % 6 == 0;
+	return c;
 }
 
 std::vector<std::string> EulerUtility::openWordFile(std::string filename)
