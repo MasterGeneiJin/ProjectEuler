@@ -10,11 +10,8 @@ void main() {
     double duration;
 
     start = std::clock();
-
-    BigInteger i = e.MinimizedPentagonalDifference();
-
+    llui i = e.TriangularPentagonalHexagonal();
     duration = ( std::clock() - start );
-
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
 	//std::cout << e.SumOfMultiplesOf3And5Ceiling1000() << std::endl;
@@ -61,6 +58,7 @@ void main() {
 	//std::cout << e.CodedTriangleNumbers() << std::endl;
 	//std::cout << e.SubStringDivisibility() << std::endl;
 	//std::cout << e.MinimizedPentagonalDifference() << std::endl;
+	//std::cout << e.TriangularPentagonalHexagonal() << std::endl;
 
 	std::cin.get();
 }

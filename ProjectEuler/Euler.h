@@ -49,4 +49,5 @@ public:
 	int CodedTriangleNumbers();
 	BigInteger SubStringDivisibility();
 	int MinimizedPentagonalDifference();
+	llui TriangularPentagonalHexagonal();
 };

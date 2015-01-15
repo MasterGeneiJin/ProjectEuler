@@ -145,12 +145,12 @@ BigInteger EulerUtility::choose(int n, int k)
 	return EulerUtility::bigFactorial(n) / (EulerUtility::bigFactorial(k) * EulerUtility::bigFactorial(n - k));
 }
 
-bool EulerUtility::isPerfectSquare(long n)
+bool EulerUtility::isPerfectSquare(llui n)
 {
 	if (n < 0)
 		return false;
 
-	long tst = (long)(sqrt(n) + 0.5);
+	llui tst = (llui)(sqrt(n) + 0.5);
 	return tst*tst == n;
 }
 
@@ -229,10 +229,9 @@ bool EulerUtility::isTriangle(int n)
 	return std::floor(sqrt(2 * n + 0.25) - 0.5) == sqrt(2 * n + 0.25) - 0.5;
 }
 
-bool EulerUtility::isPentagonal(int n)
+bool EulerUtility::isPentagonal(llui n)
 {
-	bool c =isPerfectSquare((24 * n) + 1) && ((int)sqrt((24 * n) + 1) + 1) % 6 == 0;
-	return c;
+	return isPerfectSquare((24 * n) + 1) && ((llui)sqrt((24 * n) + 1) + 1) % 6 == 0;
 }
 
 std::vector<std::string> EulerUtility::openWordFile(std::string filename)

@@ -17,13 +17,13 @@ public:
 	static int factorial(int n);
 	static BigInteger bigFactorial(BigInteger n);
 	static BigInteger choose(int n, int k);
-	static bool isPerfectSquare(long n);
+	static bool isPerfectSquare(llui n);
 	static std::vector<int> intToDigits(int n);
 	static int digitsToInteger(std::vector<int> digits);
 	static llui digitsTollui(std::string s);
 	static bool hasUniqueDigits(int n, bool allowZero);
 	static bool isPrime(int n);
 	static bool isTriangle(int n);
-	static bool isPentagonal(int n);
+	static bool isPentagonal(llui n);
 	static std::vector<std::string> openWordFile(std::string filename);
 };
