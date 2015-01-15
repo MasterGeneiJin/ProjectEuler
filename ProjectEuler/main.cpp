@@ -10,7 +10,7 @@ void main() {
     double duration;
 
     start = std::clock();
-    llui i = e.TriangularPentagonalHexagonal();
+    llui i = e.GoldbachsOtherConjecture();
     duration = ( std::clock() - start );
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
@@ -59,6 +59,7 @@ void main() {
 	//std::cout << e.SubStringDivisibility() << std::endl;
 	//std::cout << e.MinimizedPentagonalDifference() << std::endl;
 	//std::cout << e.TriangularPentagonalHexagonal() << std::endl;
+	//std::cout << e.GoldbachsOtherConjecture() << std::endl;
 
 	std::cin.get();
 }

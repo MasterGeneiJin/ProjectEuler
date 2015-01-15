@@ -50,4 +50,5 @@ public:
 	BigInteger SubStringDivisibility();
 	int MinimizedPentagonalDifference();
 	llui TriangularPentagonalHexagonal();
+	llui GoldbachsOtherConjecture();
 };
