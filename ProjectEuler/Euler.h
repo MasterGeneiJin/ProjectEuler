@@ -52,4 +52,5 @@ public:
 	llui TriangularPentagonalHexagonal();
 	llui GoldbachsOtherConjecture();
 	int DistinctPrimeFactors();
+	BigInteger SelfPowers();
 };

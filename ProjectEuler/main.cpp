@@ -10,7 +10,7 @@ void main() {
     double duration;
 
     start = std::clock();
-    llui i = e.DistinctPrimeFactors();
+    BigInteger i = e.SelfPowers();
     duration = ( std::clock() - start );
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
@@ -61,6 +61,7 @@ void main() {
 	//std::cout << e.TriangularPentagonalHexagonal() << std::endl;
 	//std::cout << e.GoldbachsOtherConjecture() << std::endl;
 	//std::cout << e.DistinctPrimeFactors() << std::endl;
+	//std::cout << e.SelfPowers() << std::endl;
 
 	std::cin.get();
 }
