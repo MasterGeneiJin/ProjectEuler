@@ -10,7 +10,7 @@ void main() {
     double duration;
 
     start = std::clock();
-    llui i = e.GoldbachsOtherConjecture();
+    llui i = e.DistinctPrimeFactors();
     duration = ( std::clock() - start );
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
@@ -60,6 +60,7 @@ void main() {
 	//std::cout << e.MinimizedPentagonalDifference() << std::endl;
 	//std::cout << e.TriangularPentagonalHexagonal() << std::endl;
 	//std::cout << e.GoldbachsOtherConjecture() << std::endl;
+	//std::cout << e.DistinctPrimeFactors() << std::endl;
 
 	std::cin.get();
 }

@@ -26,4 +26,5 @@ public:
 	static bool isTriangle(int n);
 	static bool isPentagonal(llui n);
 	static std::vector<std::string> openWordFile(std::string filename);
+	static BigInteger power(BigInteger i, int p);
 };

@@ -51,4 +51,5 @@ public:
 	int MinimizedPentagonalDifference();
 	llui TriangularPentagonalHexagonal();
 	llui GoldbachsOtherConjecture();
+	int DistinctPrimeFactors();
 };

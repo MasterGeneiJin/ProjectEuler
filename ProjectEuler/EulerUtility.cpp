@@ -246,3 +246,11 @@ std::vector<std::string> EulerUtility::openWordFile(std::string filename)
 
 	return names;
 }
+
+BigInteger EulerUtility::power(BigInteger i, int p)
+{
+	if (p <= 0)
+		return 1;
+
+	return i * power(i, p - 1);
+}
