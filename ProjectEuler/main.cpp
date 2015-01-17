@@ -10,7 +10,7 @@ void main() {
     double duration;
 
     start = std::clock();
-    BigInteger i = e.SelfPowers();
+    std::string i = e.PrimePermutations();
     duration = ( std::clock() - start );
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
@@ -62,6 +62,7 @@ void main() {
 	//std::cout << e.GoldbachsOtherConjecture() << std::endl;
 	//std::cout << e.DistinctPrimeFactors() << std::endl;
 	//std::cout << e.SelfPowers() << std::endl;
+	//std::cout << e.PrimePermutations() << std::endl;
 
 	std::cin.get();
 }

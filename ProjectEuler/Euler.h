@@ -53,4 +53,5 @@ public:
 	llui GoldbachsOtherConjecture();
 	int DistinctPrimeFactors();
 	BigInteger SelfPowers();
+	std::string PrimePermutations();
 };
