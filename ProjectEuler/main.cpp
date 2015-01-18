@@ -10,7 +10,7 @@ void main() {
     double duration;
 
     start = std::clock();
-    std::string i = e.PrimePermutations();
+    int i = e.ConsecutivePrimeSum();
     duration = ( std::clock() - start );
 	std::cout << i << " duration: " << duration << "ms" << std::endl;
 
@@ -63,6 +63,7 @@ void main() {
 	//std::cout << e.DistinctPrimeFactors() << std::endl;
 	//std::cout << e.SelfPowers() << std::endl;
 	//std::cout << e.PrimePermutations() << std::endl;
+	//std::cout << e.ConsecutivePrimeSum() << std::endl;
 
 	std::cin.get();
 }

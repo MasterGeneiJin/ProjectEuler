@@ -54,4 +54,5 @@ public:
 	int DistinctPrimeFactors();
 	BigInteger SelfPowers();
 	std::string PrimePermutations();
+	int ConsecutivePrimeSum();
 };
