@@ -56,4 +56,5 @@ public:
 	std::string PrimePermutations();
 	int ConsecutivePrimeSum();
 	int PrimeDigitReplacements();
+	int PermutedMultiples();
 };
