@@ -57,4 +57,5 @@ public:
 	int ConsecutivePrimeSum();
 	int PrimeDigitReplacements();
 	int PermutedMultiples();
+	int CombinatoricSelections();
 };

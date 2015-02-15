@@ -59,7 +59,9 @@ void main() {
 	//std::cout << e.PrimePermutations() << std::endl;
 	//std::cout << e.ConsecutivePrimeSum() << std::endl;
 	//std::cout << e.PrimeDigitReplacements() << std::endl;
-	std::cout << e.PermutedMultiples() << std::endl;
+	//std::cout << e.PermutedMultiples() << std::endl;
+	std::cout << e.CombinatoricSelections() << std::endl;
+
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
 	std::cin.get();
