@@ -6,13 +6,7 @@
 void main() {
 	Euler e;
 	
-	std::clock_t start;
-    double duration;
-
-    start = std::clock();
-    int i = e.ConsecutivePrimeSum();
-    duration = ( std::clock() - start );
-	std::cout << i << " duration: " << duration << "ms" << std::endl;
+	std::clock_t start = std::clock();
 
 	//std::cout << e.SumOfMultiplesOf3And5Ceiling1000() << std::endl;
 	//std::cout << e.SumOfEvenFibonacciNumbersCeiling4m() << std::endl;
@@ -64,6 +58,9 @@ void main() {
 	//std::cout << e.SelfPowers() << std::endl;
 	//std::cout << e.PrimePermutations() << std::endl;
 	//std::cout << e.ConsecutivePrimeSum() << std::endl;
+	std::cout << e.PrimeDigitReplacements() << std::endl;
+
+	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
 	std::cin.get();
 }

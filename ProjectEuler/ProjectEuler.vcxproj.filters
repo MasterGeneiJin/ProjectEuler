@@ -13,160 +13,175 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\1-25">
+      <UniqueIdentifier>{99022b1d-f221-49da-bbb6-3d7689e8cb86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\26-50">
+      <UniqueIdentifier>{bbbca0e4-2248-41d7-9dbc-c2cfb88b8a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\51-75">
+      <UniqueIdentifier>{135bd2f9-d09f-4af3-a5d8-69f5cefbd9f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Euler_1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_7.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_8.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_10.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_11.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_12.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_13.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_14.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_15.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_16.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_17.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_18.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_19.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_20.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_21.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_22.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_23.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_24.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euler_25.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="EulerUtility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Euler_1.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_10.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_11.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_12.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_13.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_14.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_15.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_16.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_17.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_18.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_19.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_2.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_20.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_21.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_22.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_23.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_24.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_25.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_9.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_5.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_6.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_7.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_8.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_3.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_4.cpp">
+      <Filter>Source Files\1-25</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_50.cpp">
+      <Filter>Source Files\26-50</Filter>
+    </ClCompile>
     <ClCompile Include="Euler_26.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_27.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_28.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_29.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_30.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_31.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_32.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_33.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_34.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_35.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_36.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_37.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_38.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_39.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_40.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_41.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_42.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_43.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_44.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_45.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_46.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_47.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_48.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
     </ClCompile>
     <ClCompile Include="Euler_49.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\26-50</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_51.cpp">
+      <Filter>Source Files\51-75</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

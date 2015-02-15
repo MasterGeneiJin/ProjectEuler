@@ -55,4 +55,5 @@ public:
 	BigInteger SelfPowers();
 	std::string PrimePermutations();
 	int ConsecutivePrimeSum();
+	int PrimeDigitReplacements();
 };
