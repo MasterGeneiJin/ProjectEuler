@@ -53,9 +53,9 @@ std::vector<int> getCardValues(std::vector<std::string>& hand)
 			}
 		}
 
-	std::sort(indices.begin(), indices.end(), std::greater<int>());
+		std::sort(indices.begin(), indices.end(), std::greater<int>());
 
-	return indices;
+		return indices;
 }
 
 int determineNoOfRepeats(std::unordered_set<int>& us, std::vector<int>& cardValues, int t, int def, int high)
@@ -106,57 +106,57 @@ void determinePriorityOrder(hand& h, std::unordered_set<int>& us)
 	int rep1, rep2, no = 0;
 
 	switch(h.handValue)
-			{
-			case 1:
-				rep1 = determineRepeat(us, h.cardValues, 2, false);
+	{
+	case 1:
+		rep1 = determineRepeat(us, h.cardValues, 2, false);
 
-				for (int i = 0; i < h.cardValues.size(); ++i)
-					if (h.cardValues[i] == rep1)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
+		for (int i = 0; i < h.cardValues.size(); ++i)
+			if (h.cardValues[i] == rep1)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
 
-				std::sort(h.cardValues.begin() + 2, h.cardValues.end(), std::greater<int>());
-				break;
-			case 2:
-				rep1 = determineRepeat(us, h.cardValues, 2, true);
-				rep2 = determineRepeat(us, h.cardValues, 2, false);
+		std::sort(h.cardValues.begin() + 2, h.cardValues.end(), std::greater<int>());
+		break;
+	case 2:
+		rep1 = determineRepeat(us, h.cardValues, 2, true);
+		rep2 = determineRepeat(us, h.cardValues, 2, false);
 
-				if (rep2 > rep1)
-					std::swap(rep1, rep2);
+		if (rep2 > rep1)
+			std::swap(rep1, rep2);
 
-				for (int i = 0; i < h.cardValues.size(); ++i)
-				{
-					if (h.cardValues[i] == rep1)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
-				}
+		for (int i = 0; i < h.cardValues.size(); ++i)
+		{
+			if (h.cardValues[i] == rep1)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
+		}
 
-				for (int i = 0; i < h.cardValues.size(); ++i)
-					if (h.cardValues[i] == rep2)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
-				break;
-			case 3:
-				rep1 = determineRepeat(us, h.cardValues, 3, false);
+		for (int i = 0; i < h.cardValues.size(); ++i)
+			if (h.cardValues[i] == rep2)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
+		break;
+	case 3:
+		rep1 = determineRepeat(us, h.cardValues, 3, false);
 
-				for (int i = 0; i < h.cardValues.size(); ++i)
-					if (h.cardValues[i] == rep1)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
+		for (int i = 0; i < h.cardValues.size(); ++i)
+			if (h.cardValues[i] == rep1)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
 
-				std::sort(h.cardValues.begin() + 3, h.cardValues.end(), std::greater<int>());
-				break;
-			case 6:
-				rep1 = determineRepeat(us, h.cardValues, 3, false);
-				for (int i = 0; i < h.cardValues.size(); ++i)
-					if (h.cardValues[i] == rep1)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
+		std::sort(h.cardValues.begin() + 3, h.cardValues.end(), std::greater<int>());
+		break;
+	case 6:
+		rep1 = determineRepeat(us, h.cardValues, 3, false);
+		for (int i = 0; i < h.cardValues.size(); ++i)
+			if (h.cardValues[i] == rep1)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
 
-				break;
-			case 7:
-				rep1 = determineRepeat(us, h.cardValues, 4, false);
+		break;
+	case 7:
+		rep1 = determineRepeat(us, h.cardValues, 4, false);
 
-				for (int i = 0; i < h.cardValues.size(); ++i)
-					if (h.cardValues[i] == rep1)
-						std::swap(h.cardValues[no++], h.cardValues[i]);
-				break;
-			}
+		for (int i = 0; i < h.cardValues.size(); ++i)
+			if (h.cardValues[i] == rep1)
+				std::swap(h.cardValues[no++], h.cardValues[i]);
+		break;
+	}
 }
 
 game determineHands(std::vector<std::string>& cards)

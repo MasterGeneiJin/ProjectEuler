@@ -59,4 +59,5 @@ public:
 	int PermutedMultiples();
 	int CombinatoricSelections();
 	int PokerHands();
+	BigInteger LychrelNumbers();
 };
