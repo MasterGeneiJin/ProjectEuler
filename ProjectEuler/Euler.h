@@ -58,4 +58,5 @@ public:
 	int PrimeDigitReplacements();
 	int PermutedMultiples();
 	int CombinatoricSelections();
+	int PokerHands();
 };

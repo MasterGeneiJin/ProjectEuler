@@ -99,6 +99,15 @@ std::vector<int> EulerUtility::tokenizer(std::string s, char delim)
 	return tokens;
 }
 
+std::vector<std::string> EulerUtility::strTokenizer(std::string s, char delim)
+{
+	std::istringstream split(s);
+	std::vector<std::string> tokens;
+	for (std::string each; std::getline(split, each, delim); tokens.push_back(each));
+
+	return tokens;
+}
+
 std::vector<int> EulerUtility::factorialDigits(int n)
 {
 	std::vector<int> digits(1, 1);
