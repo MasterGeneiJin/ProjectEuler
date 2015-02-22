@@ -15,6 +15,7 @@ public:
 	static std::vector<std::string> strTokenizer(std::string s, char delim);
 	static int sumOfDivisors(int n);
 	static std::vector<int> factorialDigits(int n);
+	static std::vector<int> powerDigits(int n, int p);
 	static int factorial(int n);
 	static BigInteger bigFactorial(BigInteger n);
 	static BigInteger choose(int n, int k);

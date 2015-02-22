@@ -23,7 +23,7 @@ BigInteger reverse(BigInteger i)
 	while(i > 0)
 	{
 		reverse = reverse * 10 + (i % 10);
-		i = i / 10;
+		i /= 10;
 	}
 
 	return reverse;

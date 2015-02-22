@@ -135,6 +135,34 @@ std::vector<int> EulerUtility::factorialDigits(int n)
 	return digits;
 }
 
+std::vector<int> EulerUtility::powerDigits(int n, int p)
+{
+	std::vector<int> digits = intToDigits(n);
+	std::reverse(digits.begin(), digits.end());
+
+	for (int i = 1; i < p; ++i)
+	{
+		for (unsigned j = 0; j < digits.size(); ++j)
+			digits[j] *=n;
+
+		for (unsigned j = 0; j < digits.size(); ++j)
+		{
+			if (digits[j] >= 10)
+			{
+				int carry = (digits[j] - (digits[j] % 10)) / 10;
+				digits[j] = digits[j] % 10;
+
+				if (j == digits.size() - 1)
+					digits.push_back(carry);
+				else
+					digits[j + 1] += carry;
+			}
+		}
+	}
+
+	return digits;
+}
+
 BigInteger EulerUtility::bigFactorial(BigInteger n) 
 {
 	if (n == 0)

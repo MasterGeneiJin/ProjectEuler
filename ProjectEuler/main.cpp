@@ -62,7 +62,8 @@ void main() {
 	//std::cout << e.PermutedMultiples() << std::endl;
 	//std::cout << e.CombinatoricSelections() << std::endl;
 	//std::cout << e.PokerHands() << std::endl;
-	std::cout << e.LychrelNumbers() << std::endl;
+	//std::cout << e.LychrelNumbers() << std::endl;
+	std::cout << e.PowerfulDigitSum() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 

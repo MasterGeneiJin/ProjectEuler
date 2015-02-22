@@ -60,4 +60,5 @@ public:
 	int CombinatoricSelections();
 	int PokerHands();
 	BigInteger LychrelNumbers();
+	int PowerfulDigitSum();
 };
