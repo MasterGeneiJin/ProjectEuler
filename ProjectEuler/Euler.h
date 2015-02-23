@@ -61,4 +61,5 @@ public:
 	int PokerHands();
 	BigInteger LychrelNumbers();
 	int PowerfulDigitSum();
+	int SquareRootConvergents();
 };

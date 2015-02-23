@@ -21,6 +21,7 @@ public:
 	static BigInteger choose(int n, int k);
 	static bool isPerfectSquare(llui n);
 	static std::vector<int> intToDigits(int n);
+	static std::vector<int> BigIntToDigits(BigInteger n);
 	static int digitsToInteger(std::vector<int> digits);
 	static llui digitsTollui(std::string s);
 	static bool hasUniqueDigits(int n, bool allowZero);

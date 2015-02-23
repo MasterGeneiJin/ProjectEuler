@@ -206,6 +206,21 @@ std::vector<int> EulerUtility::intToDigits(int n)
 	return digitArray;
 }
 
+std::vector<int> EulerUtility::BigIntToDigits(BigInteger n)
+{
+	std::vector<int> digitArray;
+
+	while (n != 0)
+	{
+		digitArray.push_back((n % 10).toInt());
+		n /= 10;
+	}
+
+	std::reverse(digitArray.begin(), digitArray.end());
+
+	return digitArray;
+}
+
 int EulerUtility::digitsToInteger(std::vector<int> d)
 {
 	std::stringstream ss;
