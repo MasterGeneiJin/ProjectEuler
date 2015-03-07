@@ -1,7 +1,6 @@
-#include <iostream>
 #include "Euler.h"
 
-int Euler::SpiralPrimes()
+ll Euler::SpiralPrimes()
 {
 	ll n = 8, d = 13, i = 26, count = 7, topRight = 31;
 	int mod3 = -1;

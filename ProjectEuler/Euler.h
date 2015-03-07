@@ -60,6 +60,7 @@ public:
 	BigInteger LychrelNumbers();
 	int PowerfulDigitSum();
 	int SquareRootConvergents();
-	int SpiralPrimes();
+	ll SpiralPrimes();
 	int xorDecryption();
+	int PrimePairSets();
 };
