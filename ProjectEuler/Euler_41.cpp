@@ -10,7 +10,7 @@ int determinePanPrime(std::string lexicon)
 		int mod = potentialPanPrime % 10;
 
 		if ((mod % 2 != 0) && (mod != 5))
-			if (EulerUtility::isPrime(potentialPanPrime))
+			if (EulerUtility::isPrime(potentialPanPrime, 5))
 				return potentialPanPrime;
 
 		std::prev_permutation(lexicon.begin(), lexicon.end());

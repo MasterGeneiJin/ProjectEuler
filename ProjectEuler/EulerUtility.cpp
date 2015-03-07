@@ -1,4 +1,5 @@
 #include <fstream>
+#include <numeric>
 #include <regex>
 #include <sstream>
 #include <unordered_set>
@@ -264,14 +265,71 @@ bool EulerUtility::hasUniqueDigits(int n, bool allowZero)
 	return digits.size() == uniqueDigits.size();
 }
 
-bool EulerUtility::isPrime(int n)
+/* 
+* calculates (a * b) % c taking into account that a * b might overflow 
+*/
+ll mulmod(ll a, ll b, ll mod)
 {
-	if (((!(n & 1)) && n != 2 ) || (n < 2) || (n % 3 == 0 && n != 3))
+	ll x = 0,y = a % mod;
+	while (b > 0)
+	{
+		if (b % 2 == 1)
+			x = (x + y) % mod;
+
+		y = (y * 2) % mod;
+		b /= 2;
+	}
+
+	return x % mod;
+}
+
+/* 
+* modular exponentiation
+*/
+ll modulo(ll base, ll exponent, ll mod)
+{
+	ll x = 1;
+	ll y = base;
+
+	while (exponent > 0)
+	{
+		if (exponent % 2 == 1)
+			x = (x * y) % mod;
+
+		y = (y * y) % mod;
+		exponent = exponent / 2;
+	}
+
+	return x % mod;
+}
+
+/*
+* Miller-Rabin primality test, iteration signifies the accuracy
+*/
+bool EulerUtility::isPrime(ll p, int iteration)
+{
+	if ((p < 2) || (p != 2 && p % 2 == 0))
 		return false;
 
-	for(int k = 1; 36 * k * (k - 12) * k < n; ++k)
-		if ((n % ((6 * k) + 1) == 0) || (n % ((6 * k) - 1) == 0))
+	ll s = p - 1;
+
+	while (s % 2 == 0)
+		s /= 2;
+
+	for (int i = 0; i < iteration; i++)
+	{
+		ll a = rand() % (p - 1) + 1, temp = s;
+		ll mod = modulo(a, temp, p);
+
+		while (temp != p - 1 && mod != 1 && mod != p - 1)
+		{
+			mod = mulmod(mod, mod, p);
+			temp *= 2;
+		}
+
+		if (mod != p - 1 && temp % 2 == 0)
 			return false;
+	}
 
 	return true;
 }
@@ -305,4 +363,26 @@ BigInteger EulerUtility::power(BigInteger i, int p)
 		return 1;
 
 	return i * power(i, p - 1);
+}
+
+int EulerUtility::digitalRoot(int n)
+{
+	std::vector<int> digits = intToDigits(n);
+	int digitSum = std::accumulate(digits.begin(), digits.end(), 0);
+
+	if (digitSum > 9)
+		return digitalRoot(digitSum);
+
+	return digitSum;
+}
+
+int EulerUtility::digitalRoot(BigInteger n)
+{
+	std::vector<int> digits = BigIntToDigits(n);
+	int digitSum = std::accumulate(digits.begin(), digits.end(), 0);
+
+	if (digitSum > 9)
+		return digitalRoot(digitSum);
+
+	return digitSum;
 }

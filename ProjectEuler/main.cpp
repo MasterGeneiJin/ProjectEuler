@@ -48,7 +48,7 @@ void main() {
 	//std::cout << e.PanDigitalMultiples() << std::endl;
 	//std::cout << e.MaximumRightAngledTriangles() << std::endl;
 	//std::cout << e.ChampernowneConstant() << std::endl;
-	//std::cout << e.PanDigitalPrime() << std::endl;
+	std::cout << e.PanDigitalPrime() << std::endl;
 	//std::cout << e.CodedTriangleNumbers() << std::endl;
 	//std::cout << e.SubStringDivisibility() << std::endl;
 	//std::cout << e.MinimizedPentagonalDifference() << std::endl;
@@ -64,7 +64,9 @@ void main() {
 	//std::cout << e.PokerHands() << std::endl;
 	//std::cout << e.LychrelNumbers() << std::endl;
 	//std::cout << e.PowerfulDigitSum() << std::endl;
-	std::cout << e.SquareRootConvergents() << std::endl;
+	//std::cout << e.SquareRootConvergents() << std::endl;
+	std::cout << e.SpiralPrimes() << std::endl;
+	//std::cout << e.xorDecryption() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 

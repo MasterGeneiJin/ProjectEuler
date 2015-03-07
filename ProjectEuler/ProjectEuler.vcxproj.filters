@@ -201,6 +201,12 @@
     <ClCompile Include="Euler_57.cpp">
       <Filter>Source Files\51-75</Filter>
     </ClCompile>
+    <ClCompile Include="Euler_58.cpp">
+      <Filter>Source Files\51-75</Filter>
+    </ClCompile>
+    <ClCompile Include="Euler_59.cpp">
+      <Filter>Source Files\51-75</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Euler.h">

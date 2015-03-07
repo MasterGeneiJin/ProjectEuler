@@ -4,6 +4,7 @@
 #include "BigIntegerLibrary.hh"
 
 typedef long long unsigned int llui;
+typedef long long int ll;
 
 class EulerUtility
 {
@@ -25,9 +26,12 @@ public:
 	static int digitsToInteger(std::vector<int> digits);
 	static llui digitsTollui(std::string s);
 	static bool hasUniqueDigits(int n, bool allowZero);
-	static bool isPrime(int n);
+	static bool isPrime(ll n, int iteration);
+	static bool isPrime(BigInteger& n);
 	static bool isTriangle(int n);
 	static bool isPentagonal(llui n);
 	static std::vector<std::string> openWordFile(std::string filename);
 	static BigInteger power(BigInteger i, int p);
+	static int digitalRoot(int n);
+	static int digitalRoot(BigInteger n);
 };

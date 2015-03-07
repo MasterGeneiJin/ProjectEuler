@@ -1,7 +1,5 @@
 #include "EulerUtility.h"
 
-typedef long long unsigned int llui;
-
 class Euler
 {
 public:
@@ -62,4 +60,6 @@ public:
 	BigInteger LychrelNumbers();
 	int PowerfulDigitSum();
 	int SquareRootConvergents();
+	int SpiralPrimes();
+	int xorDecryption();
 };
