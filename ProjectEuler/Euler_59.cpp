@@ -26,13 +26,8 @@ int Euler::xorDecryption()
 		{
 			for (cypher[2] = 97; cypher[2] < 123; ++cypher[2])
 			{
-				int mod3 = -1;
-
 				for (int i = 0; i < 1201; ++i)
-				{	
-					mod3 = (mod3 + 1) % 3;
-					message[i] = chars[i] ^ cypher[mod3];
-				}
+					message[i] = chars[i] ^ cypher[i % 3];
 
 				if (std::string(message).find(word) != std::string::npos)
 					return std::accumulate(message, message + 1201, 0);
