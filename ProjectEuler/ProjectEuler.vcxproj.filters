@@ -210,8 +210,8 @@
     <ClCompile Include="Euler_60.cpp">
       <Filter>Source Files\51-75</Filter>
     </ClCompile>
-    <ClCompile Include="Problem5.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Euler_61.cpp">
+      <Filter>Source Files\51-75</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

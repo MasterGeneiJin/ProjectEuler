@@ -67,8 +67,8 @@ void main() {
 	//std::cout << e.SquareRootConvergents() << std::endl;
 	//std::cout << e.SpiralPrimes() << std::endl;
 	//std::cout << e.xorDecryption() << std::endl;
-	std::cout << e.PrimePairSets() << std::endl;
-	//std::cout << e.problem5() << std::endl;
+	//std::cout << e.PrimePairSets() << std::endl;
+	std::cout << e.CyclicFigurateNumbers() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
