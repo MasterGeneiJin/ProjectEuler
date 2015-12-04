@@ -34,4 +34,5 @@ public:
 	static BigInteger power(BigInteger i, int p);
 	static int digitalRoot(int n);
 	static int digitalRoot(BigInteger n);
+	static std::vector<int> intersect(std::vector<int>& a, std::vector<int>& b);
 };

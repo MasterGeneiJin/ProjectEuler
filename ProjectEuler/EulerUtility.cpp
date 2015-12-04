@@ -386,3 +386,10 @@ int EulerUtility::digitalRoot(BigInteger n)
 
 	return digitSum;
 }
+
+std::vector<int> EulerUtility::intersect(std::vector<int>& a, std::vector<int>& b)
+{
+	std::vector<int> v(a.size() + b.size());
+	v.resize(std::set_intersection(a.begin(), a.end(), b.begin(), b.end(), v.begin()) - v.begin());
+	return v;
+}

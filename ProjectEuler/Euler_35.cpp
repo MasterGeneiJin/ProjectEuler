@@ -24,7 +24,7 @@ int Euler::NoOfCircularPrimes()
 			if (potentialCircularPrime)
 				for (int j = 0; j <= log10(prime); ++j)
 				{
-					if (primes[EulerUtility::digitsToInteger(digits)] == 0)
+					if (primes[EulerUtility::digitsToInteger(digits)] == -1)
 					{
 						potentialCircularPrime = false;
 						break;

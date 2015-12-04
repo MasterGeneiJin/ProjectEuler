@@ -63,4 +63,5 @@ public:
 	ll SpiralPrimes();
 	int xorDecryption();
 	int PrimePairSets();
+	std::string problem5();
 };

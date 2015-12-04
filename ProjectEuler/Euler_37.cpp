@@ -2,7 +2,7 @@
 
 bool isTruncPrime(std::string &p, std::vector<int> &primes, bool left)
 {
-	bool isPrime = primes[atoi(p.c_str())] != 0;
+	bool isPrime = primes[atoi(p.c_str())] != -1;
 
 	if (p.size() == 1)
 		return isPrime;

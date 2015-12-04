@@ -4,7 +4,7 @@
 
 std::string Euler::PrimePermutations()
 {
-	std::vector<int> primes = EulerUtility::getPrimesUnderCeilingIndexed(10000);
+	std::vector<int> primes = EulerUtility::getPrimesUnderCeiling(10000);
 	std::vector<std::vector<std::string>> primePermutations;
 
 	for (int p : primes)
