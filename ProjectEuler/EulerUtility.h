@@ -35,4 +35,5 @@ public:
 	static int digitalRoot(int n);
 	static int digitalRoot(BigInteger n);
 	static std::vector<int> intersect(std::vector<int>& a, std::vector<int>& b);
+	static std::vector<int> getFigurates(int sides, int floor, int ceiling);
 };

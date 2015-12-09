@@ -393,3 +393,24 @@ std::vector<int> EulerUtility::intersect(std::vector<int>& a, std::vector<int>& 
 	v.resize(std::set_intersection(a.begin(), a.end(), b.begin(), b.end(), v.begin()) - v.begin());
 	return v;
 }
+
+std::vector<int> EulerUtility::getFigurates(int sides, int floor, int ceiling)
+{
+	std::vector<int> figurates;
+
+	if (sides < 3)
+		return figurates;
+
+	for (int i = 0; i < ceiling; ++i)
+	{
+		int figurate = (sides & 1) ? (i * ((i * (sides - 2)) + 4 - sides)) / 2 : i * ((((sides / 2) - 1) * i) - ((sides / 2) - 2));
+
+		if (figurate >= floor && figurate < ceiling)
+			figurates.push_back(figurate);
+
+		if (figurate > ceiling)
+			return figurates;
+	}
+
+	return figurates;
+}
