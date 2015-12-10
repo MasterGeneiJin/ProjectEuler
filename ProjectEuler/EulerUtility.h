@@ -21,7 +21,9 @@ public:
 	static BigInteger bigFactorial(BigInteger n);
 	static BigInteger choose(int n, int k);
 	static bool isPerfectSquare(llui n);
+	static bool isPerfectCube(llui n);
 	static std::vector<int> intToDigits(int n);
+	static std::vector<int> lluiToDigits(llui n);
 	static std::vector<int> BigIntToDigits(BigInteger n);
 	static int digitsToInteger(std::vector<int> digits);
 	static llui digitsTollui(std::string s);

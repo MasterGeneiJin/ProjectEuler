@@ -64,4 +64,5 @@ public:
 	int xorDecryption();
 	int PrimePairSets();
 	int CyclicFigurateNumbers();
+	llui CubicPermutations();
 };

@@ -192,7 +192,31 @@ bool EulerUtility::isPerfectSquare(llui n)
 	return tst*tst == n;
 }
 
+bool EulerUtility::isPerfectCube(llui n)
+{
+	if (n < 0)
+		return false;
+
+    llui tst = (llui)std::floor(std::pow(n, 1/3.) + 0.5);
+    return n == tst * tst * tst;
+}
+
 std::vector<int> EulerUtility::intToDigits(int n)
+{
+	std::vector<int> digitArray;
+
+	while (n != 0)
+	{
+		digitArray.push_back(n % 10);
+		n /= 10;
+	}
+
+	std::reverse(digitArray.begin(), digitArray.end());
+
+	return digitArray;
+}
+
+std::vector<int> EulerUtility::lluiToDigits(llui n)
 {
 	std::vector<int> digitArray;
 
