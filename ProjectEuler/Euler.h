@@ -65,4 +65,5 @@ public:
 	int PrimePairSets();
 	int CyclicFigurateNumbers();
 	llui CubicPermutations();
+	int PowerfulDigitCounts();
 };
