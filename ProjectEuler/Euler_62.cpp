@@ -10,19 +10,12 @@ llui Euler::CubicPermutations()
 	for (llui i = 346;; ++i)
 	{
 		std::vector<int> cubeDigits = EulerUtility::lluiToDigits(i * i * i);
+		std::sort(cubeDigits.begin(), cubeDigits.end());
 
 		std::string key;
 
-		for (int j = 0; j < 10; ++j)
-		{
-			int count = 0;
-
-			for (int cubeDigit : cubeDigits)
-				if (cubeDigit == j)
-					++count;
-
-			key.push_back(count + '0');
-		}
+		for (int j : cubeDigits)
+			key.push_back(j + '0');
 
 		std::map<std::string, std::vector<llui>>::iterator it = cubicGroups.find(key);
 
@@ -36,7 +29,7 @@ llui Euler::CubicPermutations()
 		{
 			it->second.push_back(i * i * i);
 
-			if (it->second.size() == 5 && key != "0000000000")
+			if (it->second.size() == 5)
 			{
 				return it->second[0];
 			}
