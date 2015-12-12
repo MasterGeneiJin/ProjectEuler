@@ -4,18 +4,18 @@
 
 namespace mp = boost::multiprecision;
 
-typedef mp::number<mp::cpp_dec_float<500>> cpp_dec_float_200;
+typedef mp::number<mp::cpp_dec_float<500>> cpp_dec_float_500;
 
 int Euler::OddPeriodSquareRoots()
 {
 	int count = 0;
 
-	for (cpp_dec_float_200 i = 1; i <= 10000; ++i)
+	for (cpp_dec_float_500 i = 1; i <= 10000; ++i)
 	{
 		int sequenceLength = 0;
 
-		cpp_dec_float_200 value = mp::sqrt(i);
-		cpp_dec_float_200 floor = mp::floor(value);
+		cpp_dec_float_500 value = mp::sqrt(i);
+		cpp_dec_float_500 floor = mp::floor(value);
 
 		if (!EulerUtility::isPerfectSquare(i.convert_to<int>()))
 		{
