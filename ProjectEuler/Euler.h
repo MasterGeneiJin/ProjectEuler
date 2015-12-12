@@ -66,4 +66,5 @@ public:
 	int CyclicFigurateNumbers();
 	llui CubicPermutations();
 	int PowerfulDigitCounts();
+	int OddPeriodSquareRoots();
 };

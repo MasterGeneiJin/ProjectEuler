@@ -70,7 +70,8 @@ void main() {
 	//std::cout << e.PrimePairSets() << std::endl;
 	//std::cout << e.CyclicFigurateNumbers() << std::endl;
 	//std::cout << e.CubicPermutations() << std::endl;
-	std::cout << e.PowerfulDigitCounts() << std::endl;
+	//std::cout << e.PowerfulDigitCounts() << std::endl;
+	std::cout << e.OddPeriodSquareRoots() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
