@@ -73,7 +73,8 @@ void main() {
 	//std::cout << e.OddPeriodSquareRoots() << std::endl;
 	//std::cout << e.ConvergentsOfE() << std::endl;
 	//std::cout << e.Diophantine() << std::endl;
-	std::cout << e.Magic5GonRing() << std::endl;
+	//std::cout << e.Magic5GonRing() << std::endl;
+	std::cout << e.EulerTotient() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
