@@ -1,37 +1,61 @@
+#define _USE_MATH_DEFINES
+ 
+#include <cmath>
+#include <numeric>
+
 #include "Euler.h"
 
-int periodiuy(int n)
+std::vector<BigInteger> recurseFraction2(std::vector<BigInteger> period, BigInteger n, std::vector<BigInteger> fraction)
 {
-	double n2 = std::sqrtl(n);
-	int a = n2, p = 0, q = 1, length = 0;
+	if (n > period.size() - 1)
+		return fraction;
 
-	do
+	std::swap(fraction[0], fraction[1]);
+
+	fraction[0] = (fraction[1] * period[period.size() - n.toInt() - 1]) + fraction[0];
+
+	return recurseFraction2(period, n + 1, fraction);
+}
+
+std::vector<BigInteger> recurseFraction2(std::vector<BigInteger> period, BigInteger n)
+{
+	std::vector<BigInteger> fraction;
+
+	fraction.push_back(period[period.size() - 1]);
+	fraction.push_back(1);
+
+	return recurseFraction2(period, 1, fraction);
+}
+
+BigInteger periodiuy()
+{
+	std::vector<BigInteger> period;
+
+	period.push_back(2);
+
+	int n = 2;
+
+	for (int i = 1; i < 100; ++i)
 	{
-		length++;
-		p = a * q - p;
-		q = ( n - p * p ) / q;
-		a = ( p + n2 ) /q;
-	} while ( q != 1 );
+		if (i % 3 == 2)
+		{
+			period.push_back(n);
+			n += 2;
+		}
+		else
+		{
+			period.push_back(1);
+		}
+	}
 
-	return length;
+	
+	std::vector<BigInteger> approx = recurseFraction2(period, 0);
+	return approx[0];
 }
 
 int Euler::ConvergentsOfE()
 {
-	int odds = 0;
+	std::vector<int> digits = EulerUtility::BigIntToDigits(periodiuy());
 
-	for (int n = 1; n <= 10000; n++)
-	{
-		int n2 = sqrt(n);
-
-		if (n2 * n2 != n)
-		{
-			if (periodiuy(n) & 1)
-			{
-				odds++;
-			}
-		}
-	}
-
-	return odds;
+	return std::accumulate(digits.begin(), digits.end(), 0);
 }

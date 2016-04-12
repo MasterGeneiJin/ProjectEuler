@@ -72,8 +72,8 @@ void main() {
 	//std::cout << e.CubicPermutations() << std::endl;
 	//std::cout << e.PowerfulDigitCounts() << std::endl;
 	//std::cout << e.OddPeriodSquareRoots() << std::endl;
-	//std::cout << e.ConvergentsOfE() << std::endl;
-	std::cout << e.Diophantine() << std::endl;
+	std::cout << e.ConvergentsOfE() << std::endl;
+	//std::cout << e.Diophantine() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
