@@ -39,4 +39,5 @@ public:
 	static std::vector<int> intersect(std::vector<int>& a, std::vector<int>& b);
 	static std::vector<int> getFigurates(int sides, int floor, int ceiling);
 	static llui gcd(llui a, llui b);
+	static int phi(int n, std::vector<int> &primes, std::vector<int> &primesIndexed);
 };

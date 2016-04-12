@@ -71,4 +71,5 @@ public:
 	int Diophantine();
 	std::string Magic5GonRing();
 	int EulerTotient();
+	int TotientPermutation();
 };
