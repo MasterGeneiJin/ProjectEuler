@@ -228,7 +228,7 @@
     <ClCompile Include="Euler_66.cpp">
       <Filter>Source Files\51-75</Filter>
     </ClCompile>
-    <ClCompile Include="Euler_67.cpp">
+    <ClCompile Include="Euler_68.cpp">
       <Filter>Source Files\51-75</Filter>
     </ClCompile>
   </ItemGroup>
