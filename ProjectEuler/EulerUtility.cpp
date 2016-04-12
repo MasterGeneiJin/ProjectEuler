@@ -438,3 +438,14 @@ std::vector<int> EulerUtility::getFigurates(int sides, int floor, int ceiling)
 
 	return figurates;
 }
+
+llui EulerUtility::gcd(llui a, llui b)
+{
+    while (b != 0)
+	{
+       llui t = b; 
+       b = a % b; 
+       a = t; 
+	}
+    return a;
+}

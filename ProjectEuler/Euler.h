@@ -67,4 +67,6 @@ public:
 	llui CubicPermutations();
 	int PowerfulDigitCounts();
 	int OddPeriodSquareRoots();
+	int ConvergentsOfE();
+	int Diophantine();
 };

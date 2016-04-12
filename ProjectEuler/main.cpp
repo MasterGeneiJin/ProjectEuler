@@ -5,7 +5,7 @@
 
 void main() {
 	Euler e;
-	
+	EulerUtility eu;
 	std::clock_t start = std::clock();
 
 	//std::cout << e.SumOfMultiplesOf3And5Ceiling1000() << std::endl;
@@ -71,7 +71,9 @@ void main() {
 	//std::cout << e.CyclicFigurateNumbers() << std::endl;
 	//std::cout << e.CubicPermutations() << std::endl;
 	//std::cout << e.PowerfulDigitCounts() << std::endl;
-	std::cout << e.OddPeriodSquareRoots() << std::endl;
+	//std::cout << e.OddPeriodSquareRoots() << std::endl;
+	//std::cout << e.ConvergentsOfE() << std::endl;
+	std::cout << e.Diophantine() << std::endl;
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
