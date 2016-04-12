@@ -69,4 +69,5 @@ public:
 	int OddPeriodSquareRoots();
 	int ConvergentsOfE();
 	int Diophantine();
+	std::string Magic5GonRing();
 };
