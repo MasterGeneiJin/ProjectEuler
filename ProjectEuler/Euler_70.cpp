@@ -16,11 +16,8 @@ int Euler::TotientPermutation()
 
 		if ((std::is_permutation(digits.begin(), digits.end(), EulerUtility::intToDigits(p).begin())) && (NoverPhi > i / p))
 		{
-			if (NoverPhi > i / p)
-			{
-				NoverPhi = i / p;
-				n = i;
-			}
+			NoverPhi = i / p;
+			n = i;
 		}
 	}
 
