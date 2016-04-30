@@ -76,7 +76,7 @@ void main() {
 	//std::cout << e.Magic5GonRing() << std::endl;
 	//std::cout << e.EulerTotient() << std::endl;
 	//std::cout << e.TotientPermutation() << std::endl;
-
+	//std::cout << e.OrderedFractions() << std::endl;
 	
 	//int a[] = { 8023101, 8023038, 8022803, 8022593, 8022049, 8022013, 8022011,
 	//			8021943, 8021937, 8021917, 8021729, 8021721, 8021411, 8021389, 8021131,
