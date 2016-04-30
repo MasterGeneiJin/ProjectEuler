@@ -2,7 +2,7 @@
 
 int Euler::CodedTriangleNumbers()
 {
-	std::vector<std::string> names = EulerUtility::openWordFile("C:\\Users\\Michael\\Desktop\\Euler 42.txt");
+	std::vector<std::string> names = EulerUtility::openWordFile("E:\\Euler Resources\\Euler 42.txt");
 
 	int count = 0;
 

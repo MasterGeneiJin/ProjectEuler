@@ -16,7 +16,7 @@ void SumDigits(std::vector<int> &digits, int &greatestProduct)
 int Euler::LargestProductInGrid()
 {
 	std::ifstream fin;
-	fin.open("C:\\Users\\Michael\\Desktop\\Euler 11.txt");
+	fin.open("E:\\Euler Resources\\Euler 11.txt");
 	std::string grid;
 	std::getline(fin, grid);
 	fin.close();

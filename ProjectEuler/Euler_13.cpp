@@ -31,7 +31,7 @@ std::string Euler::LargeSum() {
 	std::ifstream fin;
 	std::vector<std::string> numbers;
 
-	fin.open("C:\\Users\\Michael\\Desktop\\Euler 13.txt");
+	fin.open("E:\\Euler Resources\\Euler 13.txt");
 
 	std::string temp;
 	while(std::getline(fin, temp))

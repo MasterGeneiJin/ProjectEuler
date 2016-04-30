@@ -4,7 +4,7 @@
 
 llui Euler::NameScores()
 {
-	std::vector<std::string> names = EulerUtility::openWordFile("C:\\Users\\Michael\\Desktop\\Euler 22.txt");
+	std::vector<std::string> names = EulerUtility::openWordFile("E:\\Euler Resources\\Euler 22.txt");
     std::sort(names.begin(), names.end());
 
 	llui sum = 0;

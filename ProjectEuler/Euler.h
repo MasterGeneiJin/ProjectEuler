@@ -72,4 +72,5 @@ public:
 	std::string Magic5GonRing();
 	int EulerTotient();
 	int TotientPermutation();
+	int OrderedFractions();
 };

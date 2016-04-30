@@ -75,7 +75,22 @@ void main() {
 	//std::cout << e.Diophantine() << std::endl;
 	//std::cout << e.Magic5GonRing() << std::endl;
 	//std::cout << e.EulerTotient() << std::endl;
-	std::cout << e.TotientPermutation() << std::endl;
+	//std::cout << e.TotientPermutation() << std::endl;
+
+	
+	//int a[] = { 8023101, 8023038, 8022803, 8022593, 8022049, 8022013, 8022011,
+	//			8021943, 8021937, 8021917, 8021729, 8021721, 8021411, 8021389, 8021131,
+	//			8020753, 8020663, 8020657, 8020651, 8020629, 8020547, 8020529, 8020451,
+	//			8020441, 8020387, 8020373, 8020023, 8020009, 8019911, 8019873, 8019763 };
+	//
+	//std::string b[] = { "false", "true" };
+	//	
+	//for (int i = 0; i < 31; ++i)
+	//{
+	//	std::cout << a[i] << " is prime = " << b[EulerUtility::isPrime(a[i], 5)] << std::endl;
+	//}
+
+	std::cout << EulerUtility::gcd(428570,999999);
 
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 

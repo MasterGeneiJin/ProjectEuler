@@ -233,7 +233,7 @@ int Euler::PokerHands()
 	int scores[2] = {0, 0};
 
 	std::ifstream fin;
-	fin.open("C:\\Users\\Michael\\Desktop\\Euler 54.txt");
+	fin.open("E:\\Euler Resources\\Euler 54.txt");
 	int idx = 0;
 
 	for (std::string line; std::getline(fin, line);)
