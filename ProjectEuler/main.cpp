@@ -78,7 +78,9 @@ void main() {
 	//std::cout << e.TotientPermutation() << std::endl;
 	//std::cout << e.OrderedFractions() << std::endl;
 	//std::cout << e.CountingFractions() << std::endl;
-	std::cout << e.CountingRangedFractions() << std::endl;
+	//std::cout << e.CountingRangedFractions() << std::endl;
+	std::cout << e.DigitFactorialChains() << std::endl;
+
 	std::cout << " duration: " << std::clock() - start << "ms" << std::endl;
 
 	std::cin.get();

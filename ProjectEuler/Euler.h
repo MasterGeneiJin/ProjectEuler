@@ -75,4 +75,5 @@ public:
 	int OrderedFractions();
 	llui CountingFractions();
 	llui CountingRangedFractions();
+	int DigitFactorialChains();
 };
