@@ -1,6 +1,3 @@
-#include <map>
-#include <set>
-
 #include "Euler.h"
 
 llui Euler::CountingFractions()

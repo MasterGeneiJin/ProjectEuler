@@ -74,4 +74,5 @@ public:
 	int TotientPermutation();
 	int OrderedFractions();
 	llui CountingFractions();
+	llui CountingRangedFractions();
 };
