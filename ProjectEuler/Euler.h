@@ -73,4 +73,5 @@ public:
 	int EulerTotient();
 	int TotientPermutation();
 	int OrderedFractions();
+	llui CountingFractions();
 };

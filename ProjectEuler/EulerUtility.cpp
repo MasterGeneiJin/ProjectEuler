@@ -450,7 +450,7 @@ llui EulerUtility::gcd(llui a, llui b)
     return a;
 }
 
-int EulerUtility::phi(int n, std::vector<int> &primes, std::vector<int> &primesIndexed)
+llui EulerUtility::phi(int n, std::vector<int> &primes, std::vector<int> &primesIndexed)
 {
 	// Base case
 	if (n < 2)

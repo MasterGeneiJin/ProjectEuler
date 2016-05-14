@@ -23,5 +23,21 @@ int Euler::OrderedFractions()
 									   //it is probably the answer. If it wasn't, then it would narrow the answer down to
 									   //d = 1,000,000 which would be trivial to work out from there.
 
-	return 428570; //As it happens, it was correct.
+	int xmax = 0, xmaxd = 2;
+
+	for (int d = 2; d <= 1000000; ++d)
+	{
+		int x = 3 * d / 7;
+
+		if ((d % 7) == 0)
+		{
+			--x;
+		}
+		if (x * xmaxd > xmax * d)
+		{
+			xmax = x, xmaxd = d;
+		}
+	}
+
+	return xmax; //As it happens, it was correct.
 }
