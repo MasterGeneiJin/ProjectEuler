@@ -14,8 +14,11 @@ int recurseChain(llui head, std::set<llui> &chain, int factorials[], int size)
 		tempHead /= 10;
 	}
 
+	//found in problem 34
 	if (newHead == 1 || newHead == 2 || newHead == 145 || newHead == 40585)
 		return size + 1;
+
+	//cycles given in the problem
 	if (newHead == 871 || newHead == 872 || newHead == 45361 || newHead == 45362)
 		return size + 2;
 	if (newHead == 169 || newHead == 1454 || newHead == 363601)
@@ -51,6 +54,8 @@ int Euler::DigitFactorialChains()
 			}
 		}
 
+		//we only check ascending values, e.g. 1243 has the same chain as 1234.
+		//zero is a wild card, therfore 1034 counts as ascending.
 		if (ordered)
 		{
 			std::set<llui> chain;
@@ -59,6 +64,7 @@ int Euler::DigitFactorialChains()
 
 			if (recurseChain(i, chain, factorials, chain.size()) == 60)
 			{
+				//this uniqueness check is necessary because solutions containing zero break the ascending rule
 				std::vector<int> digits = EulerUtility::intToDigits(i);
 				bool unique = true;
 

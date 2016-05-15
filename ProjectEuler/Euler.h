@@ -76,4 +76,5 @@ public:
 	llui CountingFractions();
 	llui CountingRangedFractions();
 	int DigitFactorialChains();
+	int UniquePerimeterRightAngledTriangles();
 };
