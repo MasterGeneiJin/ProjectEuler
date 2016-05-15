@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <set>
 
 #include "Euler.h"
@@ -32,18 +33,55 @@ int recurseChain(llui head, std::set<llui> &chain, int factorials[], int size)
 
 int Euler::DigitFactorialChains()
 {
-	int count = 0;
+	int total = 0;
 	int factorials[] = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 };
+
+	std::vector<std::vector<int>> solutions;
 
 	for (int i = 1; i < 1e6; ++i)
 	{
-		std::set<llui> chain;
+		bool ordered = true;
+	
+		for (int temp = i; temp != 0; temp /= 10)
+		{
+			if (((temp % 10) < ((temp / 10) % 10)) && ((temp % 10) != 0))
+			{
+				ordered = false;
+				break;
+			}
+		}
 
-		chain.insert(i);
+		if (ordered)
+		{
+			std::set<llui> chain;
 
-		if (recurseChain(i, chain, factorials, chain.size()) == 60)
-			++count;
+			chain.insert(i);
+
+			if (recurseChain(i, chain, factorials, chain.size()) == 60)
+			{
+				std::vector<int> digits = EulerUtility::intToDigits(i);
+				bool unique = true;
+
+				for (std::vector<int> s : solutions)
+					if (std::is_permutation(digits.begin(), digits.end(), s.begin()))
+						unique = false;
+
+				if (unique)
+				{
+					solutions.push_back(digits);
+
+					int sum = EulerUtility::factorial(digits.size()) / EulerUtility::factorial(digits.size() - std::set<int>(digits.begin(), digits.end()).size() + 1);
+
+					int zeroCount = std::count(digits.begin(), digits.end(), 0);
+
+					if (zeroCount > 0)
+						sum = ((sum / digits.size()) * (digits.size() - 1)) / EulerUtility::factorial(zeroCount);
+
+					total += sum;
+				}
+			}
+		}
 	}
 
-	return count;
+	return total;
 }
