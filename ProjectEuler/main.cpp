@@ -81,7 +81,9 @@ void main() {
 	//std::cout << e.CountingRangedFractions() << std::endl;
 	//std::cout << e.DigitFactorialChains() << std::endl;
 	//std::cout << e.UniquePerimeterRightAngledTriangles() << std::endl;
-	std::cout << e.CountingSums() << std::endl;
+	//std::cout << e.CountingSums() << std::endl;
+	std::cout << e.PrimeSummations() << std::endl;
+	//std::cout << e.CoinPartitions() << std::endl;
 
 	std::cout << "duration: " << std::clock() - start << "ms" << std::endl;
 

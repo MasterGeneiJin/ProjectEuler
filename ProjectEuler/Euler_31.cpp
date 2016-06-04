@@ -1,7 +1,5 @@
 #include "Euler.h"
 
-#include <iostream>
-
 int coins[8] = {200, 100, 50, 20, 10, 5, 2, 1};
 
 int coinSumRecurse(int money, int maxcoin)

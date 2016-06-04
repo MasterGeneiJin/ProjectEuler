@@ -78,4 +78,6 @@ public:
 	int DigitFactorialChains();
 	int UniquePerimeterRightAngledTriangles();
 	int CountingSums();
+	int PrimeSummations();
+	llui CoinPartitions();
 };
