@@ -2,15 +2,13 @@
 
 #include "Euler.h"
 
-const BigInteger ZERO = 0;
-const BigInteger ONE = 1;
 BigInteger partition(BigInteger &n, std::vector<BigInteger> &cache)
 {
 	BigInteger p = 0;
 
 	if (n >= 0)
 	{
-		if (n.compareTo(ZERO) == BigInteger::CmpRes::equal || n.compareTo(ONE) == BigInteger::CmpRes::equal)
+		if (n == 0 || n == 1)
 		{
 			return 1;
 		}
@@ -44,17 +42,20 @@ BigInteger partition(BigInteger &n, std::vector<BigInteger> &cache)
 
 llui Euler::CoinPartitions()
 {
-	for (int i = 1; i < 1000; ++i)
+	int ceiling = 100000;
+	std::vector<BigInteger> cache(ceiling, 0);
+
+	for (int i = 1; i < ceiling; ++i)
 	{
 		if ((i - 4) % 5 == 0)
 		{
-			BigInteger n = partition(BigInteger(i), std::vector<BigInteger>(i, ZERO));
+			BigInteger n = partition(BigInteger(i), cache);
 			
 			//std::cout << i << " - > " << n << std::endl;
 
-			if (n % 10000 == 0)
+			if (n % 1000000 == 0)
 			{
-				return 1;
+				return i;
 			}
 		}
 	}
