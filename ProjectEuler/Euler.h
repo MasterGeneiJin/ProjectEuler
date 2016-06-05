@@ -81,4 +81,5 @@ public:
 	int PrimeSummations();
 	llui CoinPartitions();
 	std::string PasscodeDerivation();
+	int SquareRootDigitalExpansion();
 };
