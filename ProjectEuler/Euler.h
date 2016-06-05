@@ -80,4 +80,5 @@ public:
 	int CountingSums();
 	int PrimeSummations();
 	llui CoinPartitions();
+	std::string PasscodeDerivation();
 };

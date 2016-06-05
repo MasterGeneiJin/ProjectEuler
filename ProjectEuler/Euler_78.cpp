@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "Euler.h"
 
 BigInteger partition(BigInteger &n, std::vector<BigInteger> &cache)
@@ -50,8 +48,6 @@ llui Euler::CoinPartitions()
 		if ((i - 4) % 5 == 0)
 		{
 			BigInteger n = partition(BigInteger(i), cache);
-			
-			//std::cout << i << " - > " << n << std::endl;
 
 			if (n % 1000000 == 0)
 			{
